@@ -20,8 +20,8 @@ const imageElement = document.querySelector('img');
 /* Step 4 - Adding Content */
 nameElement.innerHTML = `<strong>${fullName}</strong>`;
 let text = document.getElementById('#year').textContent;
-img.setAttribute('src', profilePicture);
-alt.setAttribute('src', `Profile image of [${fullName}]`);
+imageElement.setAttribute('src', profilePicture);
+imageElement.setAttribute('alt', `Profile image of ${fullName}`);
 
 
 
@@ -29,6 +29,7 @@ alt.setAttribute('src', `Profile image of [${fullName}]`);
 
 /* Step 5 - Array */
 const favoriteFood = ['Pizza', 'Cheeseburgers', 'Nachos', 'Ice Cream'];
+foodElement.innerHTML = `<br>${favoriteFood}`;
 const addFood = ['Broccoli'];
 const favorites = favoriteFood.joint(',');
 favoriteFood.push(addFood);
