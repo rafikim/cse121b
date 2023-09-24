@@ -28,10 +28,10 @@ imageElement.setAttribute('alt', `Profile image of ${fullName}`);
 
 
 /* Step 5 - Array */
-const favoriteFood = ['Pizza', 'Cheeseburgers', 'Nachos', 'Ice Cream'];
-foodElement.innerHTML = `<br>${favoriteFood}`;
-const addFood = ['Broccoli'];
-const favorites = favoriteFood.joint(',');
+let favoriteFood = ['Pizza', 'Cheeseburgers', 'Nachos', 'Ice Cream'];
+foodElement.textContent = favoriteFood;
+let addFood = ['Broccoli'];
+/*const favorites = favoriteFood.joint(',');*/
 favoriteFood.push(addFood);
 foodElement.innerHTML += `<br>${favoriteFood}`;
 favoriteFood.pop(0);
